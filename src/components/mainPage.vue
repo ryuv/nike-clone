@@ -353,7 +353,60 @@
 
     <!-- 푸터 -->
 
-    <div style="height:310px; width:100%; background-color:black;"></div>
+    <div style="height:auto; width:100%; background-color:#111;">
+      <div style="width:60%; height:auto; padding: 50px 0 30px 50px !important; display:inline-block;">
+        <div class="footer_div">
+          <ul style="font-family: 'Teko', sans-serif; color:white; font-size:18px;">
+            <li class="footer_li_font">GIFT CARDS</li>
+            <li class="footer_li_font">PROMOTIONS</li>
+            <li class="footer_li_font">FIND A STORE</li>
+            <li class="footer_li_font">SIGN UP FOR EMAIL</li>
+            <li class="footer_li_font">BECOME A MEMBER</li>
+            <li class="footer_li_font">SITE FEEDBACK</li>
+          </ul>
+        </div>
+        <div class="footer_div">
+          <ul>
+            <li style="font-family: 'Teko', sans-serif; color:white; font-size:18px;">GET HELP</li>
+            <li class="footer_li">Order Status</li>
+            <li class="footer_li">Shipping and Delivery</li>
+            <li class="footer_li">Returns</li>
+            <li class="footer_li">Payment Options</li>
+            <li class="footer_li">Gift Card Balance</li>
+            <li class="footer_li">Contact Us</li>
+          </ul>
+        </div>
+        <div class="footer_div">
+          <ul>
+            <li style="font-family: 'Teko', sans-serif; color:white; font-size:18px;">ABOUT TIME</li>
+            <li class="footer_li">News</li>
+            <li class="footer_li">Careers</li>
+            <li class="footer_li">Investors</li>
+            <li class="footer_li">Purpose</li>
+            <li class="footer_li">Sustainability</li>
+            <li class="footer_li">CA Supply Chains Act</li>
+
+          </ul>
+        </div>
+      </div>
+      <div style="width:39%; hegiht:auto; padding: 50px 50px 30px 0 !important; display:inline-block;"></div>
+      <div class="row" style="width:100%; border-top:1px solid #222; padding: 30px 0 10px 50px !important;">
+        <div class="col-6" style="padding:0 !important;">        
+          <font-awesome-icon style="color:white; font-size:14px; " icon="map-marker-alt" />
+          <span style="margin-left:8px !important; color:white; font-size:10px;">United States</span> 
+          <span style="color:#7E7E82; font-size:10px; margin-left:20px !important;">© 2020 Nike, Inc. All Rights Reserved</span> 
+        </div>
+
+        <div class="col-6" style="padding-right:50px !important; text-align:right;">
+          <span style="color:#7E7E82; font-size:10px; margin-left:23px !important;">Guides</span> 
+          <span style="color:#7E7E82; font-size:10px; margin-left:23px !important;">Terms of Sale</span>
+          <span style="color:#7E7E82; font-size:10px; margin-left:23px !important;">Terms of Use</span>
+          <span style="color:#7E7E82; font-size:10px; margin-left:23px !important;">Nike Privacy Policy</span>
+        </div>
+      </div>
+
+
+    </div>
 
   </div>
   <div class="mt-5 cryu_wrap_mobile" >
@@ -400,7 +453,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  @import url('https://fonts.googleapis.com/css?family=Anton|Oswald|Teko&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Anton|Teko&display=swap');
   @keyframes fadeOut {
   from {
     opacity: 1;
@@ -422,19 +475,21 @@ export default {
   }
 
   .div-hover:hover .ul-dpnone{
-    transition: opacity 0.3s linear;  
+    transition: opacity 0.5s linear;  
     opacity: 1;
+    display: inline-block;
   }
 
   .ul-dpnone{
     opacity: 0;  
+    display: none;
   }
 
   .div-hover {
     height: 200px;
     width:80%; 
     margin:50px auto !important;
-    transition: height 0.1s linear;  
+    transition: height 0.05s linear;  
     font-size: 1rem;
   }
   .div-hover:hover{
@@ -493,6 +548,22 @@ export default {
   .slide_img{
     width:100%;
     height: auto;
+  }
+
+  .footer_div{
+    width:196px;
+    height:auto;
+    display: inline-block;
+  }
+
+  .footer_li{
+    color:#7E7E82; 
+    font-size:12px; 
+    padding:4px 0 4px 0;
+  }
+
+  .footer_li_font{
+    padding: 2px 0 2px 0;
   }
 
   .cryu_wrap_mobile{
