@@ -1,5 +1,6 @@
 <template>
-  <div>
+<div>
+  <div class="cryu_wrap">
     <!-- 최상위 헤더
     <div class="border" style="height:40px; width:100%;">
 
@@ -279,8 +280,75 @@
     </div>
 
     <!-- hover 시 카테고리 추가로 나옴 -->
-    <div class="border" style="height:192px; width:90%; margin:100px auto !important;">
+    <div class="div-hover" style="">
 
+      <div style="width:100%;">
+        <div class="top-div">Icons</div>
+        <div class="top-div">Shoes</div>
+        <div class="top-div">Clothing</div>
+        <div class="top-div">Kids'</div>
+      </div>
+
+      <div class="md-div">
+        <ul>
+          <li><a href="#">Air Force 1</a></li>
+          <li><a href="#">Huarache</a></li>
+          <li><a href="#">Jordan 1</a></li>
+          <li><a href="#">Air Max 90</a></li>
+        </ul>
+        <ul class="ul-dpnone">
+          <li><a href="#">Air Max 95</a></li>
+          <li><a href="#">Air Max 97</a></li>
+          <li><a href="#">Air Max 270</a></li>
+          <li><a href="#">Air Max 720</a></li>
+          <li><a href="#">sale Air Max</a></li>
+        </ul>
+      </div>
+      <div class="md-div">
+        <ul>
+          <li><a href="#">All Shoes</a></li>
+          <li><a href="#">Custom Shoes</a></li>
+          <li><a href="#">Running Shoes</a></li>
+          <li><a href="#">Basketball Shoes</a></li>
+        </ul>
+        <ul class="ul-dpnone">
+          <li><a href="#">Training Shoes</a></li>
+          <li><a href="#">Jordan Shoes</a></li>
+          <li><a href="#">Soccer Cleats</a></li>
+          <li><a href="#">Football Cleats</a></li>
+          <li><a href="#">Sale Shoes</a></li>
+        </ul>
+      </div>
+      <div class="md-div">
+        <ul>
+          <li><a href="#">All Clothing</a></li>
+          <li><a href="#">Hoodies &amp; Pullovers</a></li>
+          <li><a href="#">Sprts Bras</a></li>
+          <li><a href="#">Pants &amp; Tights</a></li>
+        </ul>
+        <ul class="ul-dpnone">
+          <li><a href="#">Joggers &amp; Sweatpants</a></li>
+          <li><a href="#">Shorts</a></li>
+          <li><a href="#">Socks</a></li>
+          <li><a href="#">Plus Size Clothing</a></li>
+          <li><a href="#">Sale Clothing</a></li>
+        </ul>
+      </div>
+      <div class="md-div">
+        <ul>
+          <li><a href="#">Infant &amp; Toddler Shoes</a></li>
+          <li><a href="#">Kids' Shoes</a></li>
+          <li><a href="#">Kids' Basketball Shoes</a></li>
+          <li><a href="#">Kids' Running Shoes</a></li>
+        </ul>
+        <ul class="ul-dpnone">
+          <li><a href="#">Kids' Jordan Shoes</a></li>
+          <li><a href="#">Kids' Clothing</a></li>
+          <li><a href="#">Kids' Backpacks</a></li>
+          <li><a href="#">Kids' Socks</a></li>
+          <li><a href="#">Kids' Sale</a></li>
+        </ul>
+      </div>
     </div>
 
     <!-- 푸터 -->
@@ -288,6 +356,10 @@
     <div style="height:310px; width:100%; background-color:black;"></div>
 
   </div>
+  <div class="mt-5 cryu_wrap_mobile" >
+    모바일 페이지는 현재 준비 중입니다.
+  </div>
+</div>
 
 </template>
 
@@ -344,7 +416,70 @@ export default {
     animation: fadeOut 0.5s;
     opacity: 0.8;
   }
+  ul{
+    list-style: none;
 
+  }
+
+  .div-hover:hover .ul-dpnone{
+    transition: opacity 0.3s linear;  
+    opacity: 1;
+  }
+
+  .ul-dpnone{
+    opacity: 0;  
+  }
+
+  .div-hover {
+    height: 200px;
+    width:80%; 
+    margin:50px auto !important;
+    transition: height 0.1s linear;  
+    font-size: 1rem;
+  }
+  .div-hover:hover{
+    height: 350px;
+  }
+
+
+
+  .top-div{
+    width:20%;
+    display: inline-block;
+    margin-right: 6% !important;
+    font-weight: bold;
+    margin-bottom:20px !important;
+  }
+
+  .top-div:last-child{
+    margin-right: 0% !important;
+  }
+
+  .md-div{
+    width:20%;
+    display: inline-block;
+    margin-right: 6% !important;
+    
+  }
+
+  .md-div a {
+    color:#8d8d8d;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .md-div a:hover{
+    color:black;
+    text-decoration: none;
+  }
+
+  .md-div li {
+    margin-bottom: 10px !important;
+  }
+
+  .md-div:last-child{
+    margin-right: 0% !important;
+  }
   .slide_div{
     width:30% !important;
     height: auto;
@@ -359,4 +494,27 @@ export default {
     width:100%;
     height: auto;
   }
+
+  .cryu_wrap_mobile{
+    font-weight: bold;
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  @media (max-width:1000px){
+    .div-hover{
+      display: none;
+    }
+  }
+
+  @media (max-width:900px) {
+    .cryu_wrap{
+      display:none;
+    }
+    .cryu_wrap_mobile{
+      display: inline-block;
+    }
+  }
+
 </style>
