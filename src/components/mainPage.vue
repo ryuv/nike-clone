@@ -354,7 +354,7 @@
     <!-- 푸터 -->
 
     <div style="height:auto; width:100%; background-color:#111;">
-      <div style="width:60%; height:auto; padding: 50px 0 30px 50px !important; display:inline-block;">
+      <div style="width:75%; height:auto; padding: 50px 0 30px 50px !important; display:inline-block;">
         <div class="footer_div">
           <ul style="font-family: 'Teko', sans-serif; color:white; font-size:18px;">
             <li class="footer_li_font">GIFT CARDS</li>
@@ -389,7 +389,7 @@
           </ul>
         </div>
       </div>
-      <div style="width:39%; hegiht:auto; padding: 50px 50px 30px 0 !important; display:inline-block;"></div>
+      <div style="width:34%; hegiht:auto; padding: 50px 50px 30px 0 !important; display:inline-block;"></div>
       <div class="row" style="width:100%; border-top:1px solid #222; padding: 30px 0 10px 50px !important;">
         <div class="col-6" style="padding:0 !important;">        
           <font-awesome-icon style="color:white; font-size:14px; " icon="map-marker-alt" />
