@@ -1,14 +1,81 @@
 <template>
 <div>
   <div class="cryu_wrap">
-    <!-- 최상위 헤더
-    <div class="border" style="height:40px; width:100%;">
+    <!--최상위 헤더 -->
+    <div class="" style="height:40px; width:100%;">
 
-    </div> -->
+    </div>
 
     <!-- 카테고리 헤더 -->
-    <div class="border" style="height:72px; width:100%;">
+    <div class="d-flex justify-content-between align-items-center" style="border-bottom:1px solid #dee2e6; border-top:1px solid #dee2e6; height:72px; width:100%;">
+      <div class=" d-inline-block" style="height:70%; margin-left:10px !important;">
+        <img src="https://pngriver.com/wp-content/uploads/2017/11/nike-logo-png-transparent-images-clipart-icons-pngriver-download-free-PNGPIX-COM-Nike-Logo-PNG-Transparent-1.png"
+          style="height:80%;"
+        >
+      </div>
+      <div class=" d-inline-block">
+        <div id="new_releases" class="d-inline-block category_header_text">
+          <span>NEW RELEASES</span>
+          <div id="new_releases_category" class="pt-4 pb-4 border header_in_category">
+            <div class="d-inline-block">
+              <ul>
+                <li>SHOP ALL NEW ARRIVALS</li>
+                <li>SNKRS LAUNCH CALLENDAR</li>
+                <li>BEST OF THE AIR MAX</li>
+                <li>NBA ALL-STAR 2020</li>
+                <li>BEST SELLERS</li>
+                <li>NIKELAB</li>
+                <li>MEMBER EXCLUSIVES</li>
+                <li>NEW TO SALE</li>
+              </ul>
+            </div>
+
+            <div class="d-inline-block px-4 " style="">
+              <ul class="d-inline-block pr-3">
+                <li>NEW FOR MEN</li>
+                <li style="font-family: none; font-size:12px;">Shoes</li>
+                <li style="font-family: none; font-size:12px;">Clothing</li>
+                <li style="font-family: none; font-size:12px;">Equipment</li>
+                <li style="font-family: none; font-size:12px;">Shop All New</li>
+              </ul>
+
+              <ul class="d-inline-block pl-3">
+                <li>NEW FOR WOMEN</li>
+                <li style="font-family: none; font-size:12px;">Shoes</li>
+                <li style="font-family: none; font-size:12px;">Clothing</li>
+                <li style="font-family: none; font-size:12px;">Equipment</li>
+                <li style="font-family: none; font-size:12px;">Shop All New</li>
+              </ul>
+
+            </div>
+
+            <div class=" d-inline-block">
+              <ul>
+                <li>NEW FOR KIDS</li>
+                <li style="font-family: none; font-size:12px;">Boys Shoes</li>
+                <li style="font-family: none; font-size:12px;">Boys Clothing</li>
+                <li style="font-family: none; font-size:12px;">Girls Shoes</li>
+                <li style="font-family: none; font-size:12px;">Girls Clothing</li>
+                <li style="font-family: none; font-size:12px;">Shop All New</li>
+              </ul>
+            </div>
+            
+          </div>
+          
+
+        </div>
+        <div class="d-inline-block category_header_text">MEN</div>
+        <div class="d-inline-block category_header_text">WOMEN</div>
+        <div class="d-inline-block category_header_text">KIDS</div>
+        <div class="d-inline-block category_header_text">CUSTOMIZE</div>
+      </div>
+      <div class=" d-inline-block" style="margin-right:10px !important;">
+        <input type="text" class="border" style="width:200px; height:40px; outline-style:none;">
+      </div>
+
     </div>
+
+
 
     <!-- 알림 헤더
     <div class="border" style="height:58px; width:100%;">
@@ -480,6 +547,11 @@ export default {
     display: inline-block;
   }
 
+  .category_header_text{
+    font-family: 'Anton', sans-serif;
+    padding:23px;
+  }
+
   .ul-dpnone{
     opacity: 0;  
     display: none;
@@ -494,6 +566,23 @@ export default {
   }
   .div-hover:hover{
     height: 350px;
+  }
+
+  #new_releases:hover > #new_releases_category {
+    display: flex !important;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .header_in_category{
+    height:auto; 
+    width:100vw;
+    position:absolute;
+    top:112px;
+    left:0;
+    background-color:white;
+    z-index:10000;
+    display: none;
   }
 
 
